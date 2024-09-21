@@ -1,0 +1,22 @@
+class Student:
+    x=10
+A = Student() #экземпляр класса, вызывает конструктор
+B = Student() #экземпляр класса, вызывает конструктор
+
+print(A.x, B.x, Student.x)
+
+A.x = 3
+print(A.x, B.x, Student.x)
+
+Student.x = 0
+print(A.x, B.x, Student.x)
+
+class Teacher:
+    x = []
+A = Teacher() 
+B = Teacher()
+
+print(A.x, B.x, Teacher.x)
+
+A.x.append(0)
+print(A.x, B.x, Teacher.x)
